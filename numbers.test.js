@@ -1,15 +1,15 @@
 const getMissingNumbers = require('./numbers');
 
 test('It does not accept numbers as input', () => {
-    expect(getMissingNumbers(5)).toBe('invalid input');
+    expect(getMissingNumbers(5)).toBe('Invalid input');
 });
 
 test('It does not accept strings as input', () => {
-    expect(getMissingNumbers('string')).toBe('invalid input');
+    expect(getMissingNumbers('string')).toBe('Invalid input');
 });
 
 test('It does not accept an empty array as input', () => {
-    expect(getMissingNumbers([])).toBe('invalid input');
+    expect(getMissingNumbers([])).toBe('Invalid input');
 });
 
 test('It returns missing numbers in an array', () => {
