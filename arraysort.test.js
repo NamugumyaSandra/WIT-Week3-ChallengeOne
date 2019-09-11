@@ -8,6 +8,10 @@ test('It does not accept strings as input', () => {
     expect(arraySort('string')).toBe('invalid input');
 });
 
+test('It does not accept empty arrays as input', () => {
+    expect(arraySort([])).toBe('invalid input');
+});
+
 test('It sorts a given array', () => {
     expect(
         arraySort([4, 9, 2, 3, 5, 1, 'd', 'a', 'c', 'f'])

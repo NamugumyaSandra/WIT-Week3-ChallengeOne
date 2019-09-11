@@ -1,6 +1,6 @@
 function arraySort(anArray) {
     let myObject ={'evens':[],'odds':[],'chars':[]};
-    if(typeof anArray !== "object"){
+    if(typeof anArray !== "object" || anArray.length === 0){
         return 'invalid input'
     }else{
         let newArray = anArray.sort();
